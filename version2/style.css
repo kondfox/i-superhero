@@ -116,7 +116,7 @@ header .content {
 }
 
 header .fancy-bg {
-  background: url("img/space-bg1.png");
+  background: url("../img/space-bg1.png");
   background-size: cover;
   background-repeat: no-repeat;
   background-attachment: fixed;
@@ -140,7 +140,7 @@ header text {
 }
 
 #hero-img {
-  background: url("img/hero-draft.png");
+  background: url("../img/hero-draft.png");
   background-size: contain;
   background-repeat: no-repeat;
   width: 325px;

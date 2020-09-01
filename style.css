@@ -2,149 +2,32 @@
   box-sizing: border-box;
 }
 
-html {
-  scroll-behavior: smooth;
-}
-
 body {
-  background-color: #FDFCDC;
+  background-color: white;
   margin: 0;
-  font-family: 'Roboto', sans-serif;
-  padding-top: 60px;
-}
-
-/* Navigation */
-
-nav {
-  background-color: #00AFB9;
-  display: flex;
-  padding: 10px 0;
-  color: white;
-  font-size: 1.5em;
-  height: 60px;
-  position: fixed;
-  width: 100%;
-  top: 0;
-}
-
-#logo {
-  display: inline-block;
-  width: 20%;
-  text-align: center;
-}
-
-#logo img {
-  height: 250%;
-  max-width: 100px;
-}
-
-nav ul {
-  padding: 0;
-  width: 60%;
-  text-align: center;
-  margin: 0;
-  display: flex;
-  justify-content: space-between;
-}
-
-ul, li {
-  display: inline-block;
-}
-
-li {
-  list-style: none;
-  line-height: 40px;
-}
-
-a {
-  text-decoration: none;
-}
-
-nav a {
-  color: white;
-}
-
-
-/* Header */
-
-header {
-  padding-bottom: 100px;
-}
-
-header * {
-  margin: 0 auto;
-  text-align: center;
-}
-
-header textPath {
-  font-size: 3em;
-  /* font-family: 'Underdog', cursive; */
-  font-family: 'Ruslan Display', cursive;
-}
-
-header text {
-  fill: #00AFB9;
-}
-
-#hero-img {
-  background: url("img/hero-draft.png");
-  background-size: contain;
-  background-repeat: no-repeat;
-  width: 325px;
-  height: 500px;
-  margin-top: -70px;
-}
-
-path {
-  fill: transparent;
-}
-
-#title {
-  height: 236px;
-  overflow: hidden;
-}
-
-#title svg {
-  width: 800px;
-}
-
-h2 {
-  font-family: 'Ruslan Display', cursive;
-  color: #00AFB9;
-  margin-top: 30px;
-}
-
-/* Sections */
-
-section {
-  /* height: 600px; */
-  padding: 100px 20%;
-  font-size: 1.5em;
-}
-
-section p {
-  margin-bottom: 20px;
-}
-
-/* Idea */
-
-#idea {
-  background-color: #0081A7;
-  color: white;
-}
-
-#progress {
-  background-color: #FED9B7;
+  font-family: 'Open Sans', sans-serif;
   color: #666;
 }
 
-#about-us {
-  background-color: #F07167;
-  color: white;
+main {
+  padding: 50px;
+  background-color: #EEE;
+  text-align: center;
+  margin: 50px auto;
+  width: 60%;
+  height: 400px;
+  justify-items: center;
+  box-shadow: 5px 5px 5px 0px rgba(0,0,0,0.75);
 }
 
-/* Footer */
-footer {
-  height: 50px;
-  background-color: #333;
+a {
+  display: block;
+  font-size: 48px;
+  margin: 30px 0;
+  text-decoration: none;
+  color: #666;
+}
+
+a:hover {
+  color: #ff9d2f;
 }
