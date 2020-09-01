@@ -35,6 +35,7 @@ nav {
 
 #logo img {
   height: 250%;
+  max-width: 100px;
 }
 
 nav ul {
