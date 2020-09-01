@@ -139,7 +139,29 @@ header text {
   fill: #00AFB9;
 }
 
+@keyframes rotateImg {
+  0% {
+    transform: translateX(-200%) rotate(0);
+  }
+  100% {
+    transform: translateX(0) rotate(360deg);
+  }
+}
+
+@keyframes floatImg {
+  0% {
+    transform: translateY(0);
+  }
+  50% {
+    transform: translateY(-20px);
+  }
+  100% {
+    transform: translateY(0);
+  }
+}
+
 #hero-img {
+  animation: floatImg 2s infinite linear;
   background: url("../img/hero-draft.png");
   background-size: contain;
   background-repeat: no-repeat;
