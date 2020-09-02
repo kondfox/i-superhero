@@ -133,6 +133,19 @@ header text {
   margin-top: -70px;
 }
 
+#flying-boy {
+  position: fixed;
+  top: 50%;
+  left: 30px;
+  animation: floatImg 2s infinite linear;
+  background: url("../img/hero-draft2.png");
+  background-size: contain;
+  background-repeat: no-repeat;
+  width: 65px;
+  height: 100px;
+  z-index: 9999;
+}
+
 path {
   fill: transparent;
 }
