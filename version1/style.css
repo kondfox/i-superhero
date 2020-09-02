@@ -17,6 +17,7 @@ body {
 
 nav {
   background-color: #00AFB9;
+  box-shadow: 10px 10px 5px 0px rgba(0,0,0,0.75);
   display: flex;
   padding: 10px 0;
   color: white;
