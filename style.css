@@ -15,7 +15,6 @@ main {
   text-align: center;
   margin: 50px auto;
   width: 60%;
-  height: 400px;
   justify-items: center;
   box-shadow: 5px 5px 5px 0px rgba(0,0,0,0.75);
 }

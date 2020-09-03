@@ -3,14 +3,28 @@
 }
 
 html {
+  background-color: #00283B;
   scroll-behavior: smooth;
 }
 
 body {
-  background-color: #FDFCDC;
   margin: 0;
   font-family: 'Roboto', sans-serif;
   padding-top: 60px;
+  position: relative;
+}
+
+body::after {
+  content: "";
+  background-image: url('../img/bg1.png');
+  background-repeat: repeat;
+  opacity: 0.5;
+  top: 0;
+  left: 0;
+  bottom: 0;
+  right: 0;
+  position: absolute;
+  z-index: -100;  
 }
 
 /* Navigation */
@@ -72,6 +86,7 @@ nav a {
 
 header {
   z-index: 100;
+  padding-bottom: 100px;
 }
 
 .glass {
@@ -82,11 +97,11 @@ header {
 }
 
 header {
-  background: url("../img/space-bg1.png");
+  /* background: url("../img/space-bg1.png");
   background-size: cover;
   background-repeat: no-repeat;
   background-attachment: fixed;
-  background-position: top;
+  background-position: top; */
 }
 
 header * {
@@ -158,16 +173,19 @@ header h2 {
 
 /* Sections */
 
-.content {
-  position: relative;
-}
-
 section {
   /* height: 600px; */
-  padding: 100px 20%;
+  padding: 100px 10%;
   font-size: 1.5em;
   margin-top: -5vw;
   position: relative;
+}
+
+.content {
+  background-color: #fffc;
+  border-radius: 50px;
+  color: #222;
+  padding: 50px;
 }
 
 section p {
@@ -177,23 +195,35 @@ section p {
 /* Idea */
 
 #idea {
-  background-color: #F07167;
   color: white;
   z-index: 90;
 }
 
-#idea .content {
-  padding-top: 100px;
+#idea::after {
+  content: "";
+  background-image: url('../img/planet1.png');
+  background-repeat: no-repeat;
+  background-size: 50em 50em;
+  background-position-y: -10em;
+  background-position-x: -26vw;
+  margin-bottom: -50em;
+  opacity: 0.5;
+  top: 0;
+  left: 0;
+  bottom: 0;
+  right: 0;
+  position: absolute;
+  z-index: -1;   
 }
 
 #progress {
-  background-color: #FED9B7;
-  color: #666;
+  /* background-color: #FED9B7; */
+  color: white;
   z-index: 80;
 }
 
 #about-us {
-  background-color: #0081A7;
+  /* background-color: #0081A7; */
   color: white;
   z-index: 70;
 }
