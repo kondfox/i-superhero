@@ -18,6 +18,7 @@ body::after {
   content: "";
   background-image: url('../img/bg1.png');
   background-repeat: repeat;
+  background-attachment: fixed;
   opacity: 0.5;
   top: 0;
   left: 0;
