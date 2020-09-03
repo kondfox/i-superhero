@@ -182,10 +182,22 @@ section {
 }
 
 .content {
-  background-color: #fffc;
-  border-radius: 50px;
-  color: #222;
+  background-color: #fffe;
+  box-shadow: 10px 10px 0px 0px rgba(0,40,59,0.5);
+  color: #00283B;
   padding: 50px;
+  font-size: 26px;
+  line-height: 42px;
+}
+
+section:nth-child(even) .content {
+  border-top-right-radius: 50px;
+  border-bottom-left-radius: 50px;
+}
+
+section:nth-child(odd) .content {
+  border-top-left-radius: 50px;
+  border-bottom-right-radius: 50px;
 }
 
 section p {
