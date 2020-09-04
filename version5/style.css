@@ -1,0 +1,300 @@
+* {
+  box-sizing: border-box;
+}
+
+html {
+  background-color: #00283B;
+  scroll-behavior: smooth;
+}
+
+body {
+  margin: 0;
+  font-family: 'Roboto', sans-serif;
+  padding-top: 60px;
+  position: relative;
+}
+
+body::after {
+  content: "";
+  background-image: url('../img/bg1.png');
+  background-repeat: repeat;
+  background-attachment: fixed;
+  opacity: 0.5;
+  top: 0;
+  left: 0;
+  bottom: 0;
+  right: 0;
+  position: absolute;
+  z-index: -100;  
+}
+
+main {
+}
+
+main::after {
+  content: "";
+  background-color: #0009;
+  top: 0;
+  left: 0;
+  bottom: 0;
+  right: 0;
+  position: absolute;
+  z-index: -90;  
+}
+
+/* Navigation */
+
+nav {
+  background-color: #00AFB9;
+  box-shadow: 0px 5px 5px 0px rgba(0,0,0,0.5);
+  display: flex;
+  padding: 10px 0;
+  height: 60px;
+  position: fixed;
+  width: 100%;
+  top: 0;
+  z-index: 9999;
+}
+
+#logo {
+  display: inline-block;
+  width: 20%;
+  text-align: center;
+}
+
+#logo img {
+  max-width: 100px;
+  height: 250%;
+}
+
+nav ul {
+  padding: 0;
+  width: 60%;
+  text-align: center;
+  margin: 0;
+  display: flex;
+  justify-content: space-between;
+}
+
+ul, li {
+  display: inline-block;
+}
+
+li {
+  list-style: none;
+  line-height: 40px;
+}
+
+a {
+  text-decoration: none;
+}
+
+nav a {
+  color: white;
+  font-size: 1.5em;
+  /* color: #0D4383; */
+  text-shadow: rgba(0,0,0,0.3) 1px 2px;
+}
+
+
+/* Header */
+
+header {
+  z-index: 100;
+  padding-bottom: 100px;
+}
+
+.glass {
+  background-color: #FFFFFF22;
+  width: 100%;
+  height: 100%;
+  padding-bottom: 100px;
+}
+
+header {
+  /* background: url("../img/space-bg1.png");
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  background-position: top; */
+}
+
+header * {
+  margin: 0 auto;
+  text-align: center;
+}
+
+header textPath {
+  font-size: 3em;
+  /* font-family: 'Underdog', cursive; */
+  font-family: 'Ruslan Display', cursive;
+  text-shadow: rgba(255,255,255,0.15) 10px 10px 0px;
+}
+
+header text {
+  fill: #00AFB9;
+}
+
+@keyframes rotateImg {
+  0% {
+    transform: translateX(-200%) rotate(0);
+  }
+  100% {
+    transform: translateX(0) rotate(360deg);
+  }
+}
+
+@keyframes floatImg {
+  0% {
+    transform: translateY(0);
+  }
+  50% {
+    transform: translateY(-20px);
+  }
+  100% {
+    transform: translateY(0);
+  }
+}
+
+#hero-container {
+  height: 500px;
+}
+
+#hero-img {
+  animation: floatImg 2s infinite linear;
+  background: url("../img/hero-draft2.png");
+  background-size: contain;
+  background-repeat: no-repeat;
+  width: 325px;
+  height: 500px;
+  margin-top: -70px;
+}
+
+path {
+  fill: transparent;
+}
+
+#title {
+  height: 236px;
+  overflow: hidden;
+}
+
+#title svg {
+  width: 800px;
+}
+
+header h2 {
+  font-family: 'Ruslan Display', cursive;
+  color: #00AFB9;
+  margin-top: 30px;
+  text-shadow: rgba(255,255,255,0.15) 2px 2px 0px;
+}
+
+/* Sections */
+
+section {
+  /* height: 600px; */
+  padding: 100px 10%;
+  font-size: 1.5em;
+  margin-top: -5vw;
+  position: relative;
+}
+
+section::after {
+  content: "";
+  background-repeat: no-repeat;
+  background-size: 50em 50em;
+  opacity: 0.5;
+  position: absolute;
+  z-index: -1; 
+}
+
+.content {
+  color: white;
+  padding: 50px;
+  font-size: 26px;
+  line-height: 42px;
+}
+
+.content h2 {
+  color: #00AFB9;
+  font-size: 64px;
+  font-weight: 300;
+  text-transform: uppercase;
+}
+
+section p {
+  font-weight: 300;
+  margin-bottom: 20px;
+  text-align: justify;
+}
+
+/* Idea */
+
+#idea {
+  color: white;
+  z-index: 90;
+}
+
+#idea::after {
+  top: 0;
+  left: 0;
+  bottom: 0;
+  right: 0;
+  background-image: url('../img/planet1.png');
+  background-position-x: -26vw;
+  margin-bottom: -50em;
+}
+
+#progress {
+  color: white;
+  z-index: 80;
+}
+
+#progress::after {
+  top: 0;
+  bottom: 0;
+  right: 0;
+  left: 45%;
+  background-image: url('../img/planet2.png');
+  margin-bottom: -50em;
+}
+
+#about-us {
+  /* background-color: #0081A7; */
+  color: white;
+  z-index: 70;
+}
+
+/* Footer */
+footer {
+  height: 50px;
+}
+
+/* Flying boy */
+
+#flying-boy {
+  position: fixed;
+  top: 50%;
+  left: 8%;
+  animation: floatImg 2s infinite linear;
+  background: url("../img/hero-draft2.png");
+  background-size: contain;
+  background-repeat: no-repeat;
+  opacity: 0.4;
+  width: 65px;
+  height: 100px;
+  z-index: 9999;
+}
+
+#flying-boy-appearance-trigger {
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  top: 500px;
+  left: 0;
+}
+
+.hidden {
+  display: none;
+}
