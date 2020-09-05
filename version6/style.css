@@ -195,8 +195,10 @@ section {
   /* height: 600px; */
   padding: 100px 10%;
   font-size: 1.5em;
-  margin-top: -5vw;
   position: relative;
+  background-image: url('../img/bg1.png');
+  background-repeat: repeat;
+  background-attachment: fixed;
 }
 
 section::after {
@@ -238,12 +240,12 @@ section p {
 }
 
 #idea::after {
-  left: -7em;
-  bottom: -14em;
-  width: 30em;
-  height: 30em; 
-  background-size: 30em 30em;
-  background-image: url('../img/planet1.png');
+  left: 0;
+  bottom: -10em;
+  width: 20em;
+  height: 20em; 
+  background-size: 20em 20em;
+  background-image: url('../img/planet1_big.png');
 }
 
 #progress {
@@ -252,12 +254,12 @@ section p {
 }
 
 #progress::after {
-  bottom: -14em;
+  bottom: -12em;
   right: 0;
-  width: 24em;
-  height: 24em;
-  background-size: 40em 40em;
-  background-image: url('../img/planet2.png');
+  width: 20em;
+  height: 20em;
+  background-size: 20em 20em;
+  background-image: url('../img/planet2_big.png');
   background-position: center;
 }
 
