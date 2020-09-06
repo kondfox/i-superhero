@@ -6,13 +6,15 @@
   <link href="https://fonts.googleapis.com/css2?family=Underdog&display=swap" rel="stylesheet">
   <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@100;300;400;500;900&display=swap" rel="stylesheet">
   <link rel="stylesheet" href="style.css">
+  <script src="jquery-3.5.2-min.js"></script>
+  <script src="jquery.arctext.js"></script>
   <title>Я - супергерой</title>
 </head>
 <body id="body">
   <nav>
     <div id="logo">
       <a href="#body">
-        <img src="../img/logo2.png">
+        <img src="../img/logo3.png">
       </a>
     </div>
     <ul>
@@ -31,20 +33,11 @@
     </ul>
   </nav>
   <header>
-    <div id="title">
-      <svg viewBox="0 0 500 500">
-        <path id="curve" d="M73.2,148.6c4-6.1,65.5-96.8,178.6-95.6c111.3,1.2,170.8,90.3,175.1,97" />
-        <text width="500">
-          <textPath xlink:href="#curve">
-            Я - супергерой
-          </textPath>
-        </text>
-      </svg>
-    </div>
+    <h1 id="title">МИР S</h1>
     <div id="hero-container">
       <div id="hero-img"></div>
     </div>
-    <h2>Новый подход к развития ваших детей</h2>
+    <h2 id="subtitle">Методика Игрового Развития Sпособностей</h2>
   </header>
   <main>
     <section id="idea">
@@ -81,6 +74,15 @@
   <footer></footer>
   <div id="flying-boy"></div>
   <div id="flying-boy-appearance-trigger"></div>
+  <script>
+    // $('#title').arctext({
+    //   radius: 300
+    // });
+    // $('#subtitle').arctext({
+    //   radius: 100,
+    //   dir: -1
+    // });
+  </script>
   <script src="site.js" type="application/javascript"></script>
 </body>
 </html>
