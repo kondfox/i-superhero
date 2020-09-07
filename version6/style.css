@@ -265,6 +265,15 @@ section p {
   color: white;
 }
 
+#about-us::after {
+  left: 0;
+  bottom: -9em;
+  width: 18em;
+  height: 18em; 
+  background-size: 18em 18em;
+  background-image: url('../img/planet3.png');
+}
+
 #contact {
   background-color: #F94144;
 }
