@@ -165,10 +165,10 @@ header {
 
 #hero-img {
   animation: floatImg 2s infinite linear;
-  background: url("../img/hero-draft2.png");
+  background: url("../img/hero.png");
   background-size: contain;
   background-repeat: no-repeat;
-  width: 325px;
+  width: 500px;
   height: 500px;
   margin-top: -70px;
 }
@@ -290,11 +290,11 @@ footer {
   top: 50%;
   left: 8%;
   animation: floatImg 2s infinite linear;
-  background: url("../img/hero-draft2.png");
+  background: url("../img/hero.png");
   background-size: contain;
   background-repeat: no-repeat;
   opacity: 1;
-  width: 65px;
+  width: 100px;
   height: 100px;
   z-index: 9999;
 }
