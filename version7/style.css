@@ -1,0 +1,421 @@
+* {
+  box-sizing: border-box;
+}
+
+html {
+  background-color: #00283b;
+  scroll-behavior: smooth;
+}
+
+body {
+  margin: 0;
+  font-family: "Roboto", sans-serif;
+  padding-top: 60px;
+  position: relative;
+}
+
+body::after {
+  content: "";
+  background-image: url("../img/bg1.png");
+  background-repeat: repeat;
+  background-attachment: fixed;
+  opacity: 0.5;
+  top: 0;
+  left: 0;
+  bottom: 0;
+  right: 0;
+  position: absolute;
+  z-index: -100;
+}
+
+main {
+}
+
+main::after {
+  content: "";
+  /* background-color: #0009; */
+  top: 0;
+  left: 0;
+  bottom: 0;
+  right: 0;
+  position: absolute;
+  z-index: -90;
+}
+
+main h1 {
+  color: #f5d12f;
+  font-size: 48px;
+  text-align: center;
+}
+
+a.button {
+  background-color: #f8961e;
+  border-radius: 5px;
+  border: none;
+  color: white;
+  display: block;
+  font-size: 32px;
+  cursor: pointer;
+  margin-top: 50px;
+  outline: none;
+  text-align: center;
+  line-height: 80px;
+  height: 80px;
+  width: 400px;
+}
+
+a.button:hover {
+  background-color: #5f86e2;
+}
+
+/* Navigation */
+
+nav {
+  /* background-color: #4363ae; */
+  background-color: #5f86e2;
+  box-shadow: 0px 5px 5px 0px rgba(0, 0, 0, 0.5);
+  display: flex;
+  padding: 10px 0;
+  height: 60px;
+  position: fixed;
+  width: 100%;
+  top: 0;
+  z-index: 9999;
+}
+
+#logo {
+  display: inline-block;
+  width: 20%;
+  text-align: center;
+  position: relative;
+}
+
+#logo img {
+  max-width: 100px;
+  height: 250%;
+  position: absolute;
+  top: -0.5em;
+  /* right: 4.5em; */
+  left: 2em;
+}
+
+nav ul {
+  padding: 0;
+  width: 60%;
+  text-align: center;
+  margin: 0;
+  display: flex;
+  justify-content: space-between;
+}
+
+ul,
+li {
+  display: inline-block;
+}
+
+li {
+  list-style: none;
+  line-height: 40px;
+}
+
+a {
+  text-decoration: none;
+}
+
+nav a {
+  color: white;
+  font-size: 1.5em;
+  /* color: #0D4383; */
+  text-shadow: rgba(0, 0, 0, 0.3) 1px 2px;
+}
+
+/* Header */
+
+header {
+  padding-bottom: 100px;
+}
+
+.glass {
+  background-color: #ffffff22;
+  width: 100%;
+  height: 100%;
+  padding-bottom: 100px;
+}
+
+header * {
+  margin: 0 auto;
+  text-align: center;
+}
+
+header {
+  color: #f5d12f;
+  font-family: "Russo One", sans-serif;
+  text-align: center;
+}
+
+header svg {
+  width: 800px;
+}
+
+#title textPath {
+  /* font-family: "Andika", sans-serif; */
+  font-family: "Russo One", sans-serif;
+  /* font-family: "Underdog", cursive; */
+  fill: #f5d12f;
+  font-size: 2.5em;
+  /* text-shadow: rgba(255, 255, 255, 0.15) 10px 10px 0px; */
+  padding: 50px 0 100px 0;
+  /* letter-spacing: 20px; */
+}
+
+#subtitle {
+  color: #fb3436;
+  font-size: 2.5em;
+  letter-spacing: 6px;
+  margin-top: 30px;
+  text-shadow: rgba(255, 255, 255, 0.15) 2px 2px 0px;
+}
+
+h3 {
+  letter-spacing: 3px;
+  padding: 20px 0;
+}
+
+@keyframes rotateImg {
+  0% {
+    transform: translateX(-200%) rotate(0);
+  }
+  100% {
+    transform: translateX(0) rotate(360deg);
+  }
+}
+
+@keyframes floatImg {
+  0% {
+    transform: translateY(0);
+  }
+  50% {
+    transform: translateY(-20px);
+  }
+  100% {
+    transform: translateY(0);
+  }
+}
+
+#hero-container {
+  height: 500px;
+}
+
+#hero-img {
+  animation: floatImg 2s infinite linear;
+  background: url("../img/hero2.png");
+  background-position-x: -38px;
+  background-size: contain;
+  background-repeat: no-repeat;
+  width: 500px;
+  height: 500px;
+  margin-top: -70px;
+}
+
+path {
+  fill: transparent;
+}
+
+#title {
+  height: 236px;
+  overflow: hidden;
+}
+
+#title svg {
+  width: 800px;
+}
+
+/* Sections */
+
+section {
+  /* height: 600px; */
+  padding: 100px 0;
+  font-size: 1.5em;
+  position: relative;
+  background-image: url("../img/bg_transparent.png");
+  background-repeat: repeat;
+  background-attachment: fixed;
+}
+
+section::after {
+  content: "";
+  background-repeat: no-repeat;
+  background-size: 50em 50em;
+  opacity: 1;
+  position: absolute;
+  z-index: 1;
+}
+
+.content {
+  color: black;
+  padding: 50px;
+  font-size: 26px;
+  line-height: 42px;
+  margin: auto;
+  /* max-width: 1200px; */
+  width: 75%;
+  position: relative;
+  z-index: 1000;
+}
+
+.content h2 {
+  font-size: 28px;
+  font-weight: 600;
+  letter-spacing: 1px;
+  text-transform: uppercase;
+}
+
+.content em {
+  display: block;
+  text-align: justify;
+}
+
+section p {
+  font-weight: 300;
+  margin-bottom: 20px;
+  text-align: justify;
+}
+
+.layer {
+  background-color: #fffc;
+  padding: 20px 50px;
+}
+
+#game .layer {
+  border-radius: 20px;
+}
+
+form {
+  display: flex;
+  justify-content: space-between;
+}
+
+form a {
+  background-color: #5f86e1;
+  border: none;
+  color: white;
+  cursor: pointer;
+  display: inline-block;
+  height: 50px;
+  line-height: 50px;
+  margin: 0;
+  width: 25%;
+  text-align: center;
+}
+
+form a:hover {
+  background-color: #f8961e;
+}
+
+input[type="email"] {
+  border: none;
+  color: #666;
+  outline: none;
+  font-size: 32px;
+  padding: 5px 10px;
+  height: 50px;
+  width: 70%;
+}
+
+/* Idea */
+
+#method {
+  background-color: #f8961e;
+  color: white;
+}
+
+#method::after {
+  left: 0;
+  bottom: -10em;
+  width: 20em;
+  height: 20em;
+  background-size: 20em 20em;
+  background-image: url("../img/planet1_big.png");
+}
+
+#progress {
+  background-color: #90be6d;
+  color: white;
+}
+
+#progress::after {
+  bottom: -12em;
+  right: 0;
+  width: 20em;
+  height: 20em;
+  background-size: 20em 20em;
+  background-image: url("../img/planet2_big.png");
+  background-position: center;
+}
+
+#about-us {
+  background-color: #f9c74f;
+  color: white;
+}
+
+#about-us::after {
+  left: 0;
+  bottom: -9em;
+  width: 18em;
+  height: 18em;
+  background-size: 18em 18em;
+  background-image: url("../img/planet3.png");
+}
+
+#contact {
+  background-color: #f94144;
+}
+
+#subscribe {
+  background-color: #fff8;
+  border-radius: 20px;
+  margin: 50px 0;
+  padding: 30px;
+}
+
+#subscribe form {
+  text-align: center;
+  margin: 30px 0;
+}
+
+#game {
+  padding: 0;
+}
+
+/* Footer */
+footer {
+  height: 50px;
+}
+
+/* Flying boy */
+
+#flying-boy {
+  position: fixed;
+  top: 50%;
+  left: 2.5em;
+  animation: floatImg 2s infinite linear;
+  background: url("../img/hero2.png");
+  background-size: contain;
+  background-repeat: no-repeat;
+  opacity: 1;
+  width: 100px;
+  height: 100px;
+  z-index: 9999;
+}
+
+#flying-boy-appearance-trigger {
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  top: 500px;
+  left: 0;
+}
+
+.hidden {
+  display: none;
+}
