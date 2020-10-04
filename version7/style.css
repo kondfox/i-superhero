@@ -62,10 +62,19 @@ a.button {
   line-height: 80px;
   height: 80px;
   width: 400px;
+  transition: 0.25s;
+}
+
+@keyframes pulse {
+  0% {
+    box-shadow: 0 0 0 0 adjust-hue(#f8961e, 45deg);
+  }
 }
 
 a.button:hover {
   background-color: #5f86e2;
+  animation: pulse 1s;
+  box-shadow: 0 0 0 2em rgba(#fff, 0);
 }
 
 /* Navigation */
@@ -80,7 +89,7 @@ nav {
   position: fixed;
   width: 100%;
   top: 0;
-  z-index: 9999;
+  z-index: 9000;
 }
 
 #logo {
@@ -91,8 +100,8 @@ nav {
 }
 
 #logo img {
-  max-width: 100px;
-  height: 250%;
+  max-width: 120px;
+  height: 120px;
   position: absolute;
   top: -0.5em;
   /* right: 4.5em; */
@@ -166,6 +175,11 @@ header svg {
   /* text-shadow: rgba(255, 255, 255, 0.15) 10px 10px 0px; */
   padding: 50px 0 100px 0;
   /* letter-spacing: 20px; */
+}
+
+strong {
+  color: #fb3436;
+  font-size: 28px;
 }
 
 #subtitle {
@@ -275,6 +289,10 @@ section::after {
   text-align: justify;
 }
 
+.content.layer {
+  background-color: #fffc;
+}
+
 section p {
   font-weight: 300;
   margin-bottom: 20px;
@@ -282,7 +300,8 @@ section p {
 }
 
 .layer {
-  background-color: #fffc;
+  background-color: #fff5;
+  border-radius: 20px;
   padding: 20px 50px;
 }
 
@@ -306,11 +325,12 @@ form a {
   margin: 0;
   width: 25%;
   text-align: center;
+  transition: 0.25s;
 }
 
-form a:hover {
+/* form a:hover {
   background-color: #f8961e;
-}
+} */
 
 input[type="email"] {
   border: none;
@@ -356,6 +376,61 @@ input[type="email"] {
 #about-us {
   background-color: #f9c74f;
   color: white;
+}
+
+#us {
+  /* display: flex;
+  justify-content: space-between; */
+  margin-bottom: 50px;
+}
+
+.card {
+  margin-bottom: 50px;
+}
+
+.card img {
+  width: 40%;
+  float: left;
+  margin-right: 30px;
+}
+
+.card a {
+  display: block;
+  color: #5f86e2;
+  cursor: pointer;
+  text-decoration: underline;
+}
+
+.card a:hover {
+  color: white;
+}
+
+.role,
+.who {
+}
+
+.about {
+}
+
+.about p:last-child {
+  float: left;
+}
+
+.quote {
+  font-size: 40px;
+  font-weight: 600;
+}
+
+.about .quote:first-child {
+  margin-right: 5px;
+}
+
+.about .quote:last-child {
+  margin-left: 5px;
+}
+
+#for-parents {
+  text-align: justify;
 }
 
 #about-us::after {
@@ -418,4 +493,93 @@ footer {
 
 .hidden {
   display: none;
+}
+
+.modal {
+  display: block;
+
+  /* Probably need media queries here */
+  width: 80%;
+  max-width: 100%;
+
+  height: 80%;
+  max-height: 100%;
+
+  position: fixed;
+
+  z-index: 100;
+
+  left: 50%;
+  top: 50%;
+
+  transform: translate(-50%, -50%);
+
+  /* If known, negative margins are probably better (less chance of blurry text). */
+  /* margin: -200px 0 0 -200px; */
+
+  background: white;
+  box-shadow: 0 0 60px 10px rgba(0, 0, 0, 0.9);
+  z-index: 9999;
+}
+
+.modal-overlay {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  z-index: 50;
+  cursor: pointer;
+  background: rgba(0, 0, 0, 0.6);
+  z-index: 9997;
+}
+
+.modal-content {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  overflow: auto;
+  padding: 20px 50px;
+  text-align: justify;
+  font-size: 18px;
+}
+
+.modal strong {
+  color: inherit;
+  font-size: inherit;
+}
+
+.modal ul {
+  display: inherit;
+}
+
+.modal li {
+  display: list-item;
+  list-style: inherit;
+  line-height: 2;
+}
+
+.modal em {
+  display: block;
+  margin: 50px 0;
+}
+
+.closed {
+  display: none;
+}
+
+.close {
+  color: #aaaaaa;
+  float: right;
+  font-size: 28px;
+  font-weight: bold;
+}
+
+.close:hover,
+.close:focus {
+  color: #000;
+  text-decoration: none;
+  cursor: pointer;
 }
