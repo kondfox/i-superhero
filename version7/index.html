@@ -182,7 +182,7 @@
             </p>
             <form>
               <input type="email" placeholder="email@domain.com" />
-              <a>Отправить</a>
+              <a class="button">Отправить</a>
             </form>
           </div>
         </div>
@@ -292,30 +292,28 @@
       <section id="contact">
         <div class="content">
           <h2>Контакты</h2>
-          <p>
-            В профессиональной сфере часто случается так, что личные или
-            корпоративные клиенты заказывают, чтобы публикация была сделана и
-            представлена еще тогда, когда фактическое содержание все еще не
-            готово.
-          </p>
-          <p>
-            Вспомните новостные блоги, где информация публикуется каждый час в
-            живом порядке. Тем не менее, читатели склонны к тому, чтобы быть
-            отвлеченными доступным контентом, скажем, любым текстом, который был
-            скопирован из газеты или интернета. Они предпочитают
-            сконцентрироваться на тексте, пренебрегая разметкой и ее элементами.
-            К тому же, случайный текст подвергается риску быть неумышленно
-            смешным или оскорбительным, что является неприемлемым риском в
-            корпоративной среде. Lorem ipsum, а также ее многие варианты были
-            использованы в работе начиная с 1960-ых, и очень даже похоже, что
-            еще с 16-го века.
-          </p>
+          <div id="contact-items">
+            <a
+              class="contact-item"
+              href="https://www.instagram.com/school_of_superheroes/"
+              target="_blank"
+            >
+              <img
+                src="../img/instagram_icon.png"
+                alt="instagram"
+                id="istagram"
+              />
+              <span>#school_of_superheroes</span>
+            </a>
+            <a class="contact-item" href="mailto:heroschool@mail.ru">
+              <img src="../img/mail_icon.png" alt="email" id="email" />
+              <span>heroschool@mail.ru</span>
+            </a>
+          </div>
         </div>
       </section>
     </main>
     <footer></footer>
-    <div id="flying-boy"></div>
-    <div id="flying-boy-appearance-trigger"></div>
     <div class="modal-overlay closed" id="modal-overlay"></div>
     <div id="lara-modal" class="modal closed">
       <div class="modal-content">
@@ -471,6 +469,8 @@
         </p>
       </div>
     </div>
+    <div id="flying-boy"></div>
+    <div id="flying-boy-appearance-trigger"></div>
     <script>
       // $("#title").arctext({
       //   radius: 500,

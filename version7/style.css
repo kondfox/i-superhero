@@ -48,9 +48,25 @@ main h1 {
   text-align: center;
 }
 
+@keyframes pulse1 {
+  0% {
+    box-shadow: 0 0 0 0 #f8961e;
+  }
+  100% {
+    box-shadow: 0 0 0 2em #f8961e00;
+  }
+}
+
+@keyframes pulse2 {
+  0% {
+    box-shadow: 0 0 0 0 #5f86e2;
+  }
+  100% {
+    box-shadow: 0 0 0 2em #5f86e200;
+  }
+}
+
 a.button {
-  background-color: #f8961e;
-  border-radius: 5px;
   border: none;
   color: white;
   display: block;
@@ -62,19 +78,16 @@ a.button {
   line-height: 80px;
   height: 80px;
   width: 400px;
-  transition: 0.25s;
+  transition: 0.5s;
 }
 
-@keyframes pulse {
-  0% {
-    box-shadow: 0 0 0 0 adjust-hue(#f8961e, 45deg);
-  }
+.content a.button {
+  background-color: #f8961e;
 }
 
-a.button:hover {
+.content a.button:hover {
   background-color: #5f86e2;
-  animation: pulse 1s;
-  box-shadow: 0 0 0 2em rgba(#fff, 0);
+  animation: pulse1 0.5s;
 }
 
 /* Navigation */
@@ -104,7 +117,6 @@ nav {
   height: 120px;
   position: absolute;
   top: -0.5em;
-  /* right: 4.5em; */
   left: 2em;
 }
 
@@ -167,9 +179,7 @@ header svg {
 }
 
 #title textPath {
-  /* font-family: "Andika", sans-serif; */
   font-family: "Russo One", sans-serif;
-  /* font-family: "Underdog", cursive; */
   fill: #f5d12f;
   font-size: 2.5em;
   /* text-shadow: rgba(255, 255, 255, 0.15) 10px 10px 0px; */
@@ -217,18 +227,18 @@ h3 {
 }
 
 #hero-container {
-  height: 500px;
+  height: 600px;
 }
 
 #hero-img {
   animation: floatImg 2s infinite linear;
-  background: url("../img/hero2.png");
-  background-position-x: -38px;
+  background: url("../img/heros.png");
+  /* background-position-x: -38px; */
   background-size: contain;
   background-repeat: no-repeat;
-  width: 500px;
-  height: 500px;
-  margin-top: -70px;
+  width: 800px;
+  height: 800px;
+  margin-top: -160px;
 }
 
 path {
@@ -268,8 +278,8 @@ section::after {
 .content {
   color: black;
   padding: 50px;
-  font-size: 26px;
-  line-height: 42px;
+  font-size: 20px;
+  line-height: 1.5;
   margin: auto;
   /* max-width: 1200px; */
   width: 75%;
@@ -281,6 +291,7 @@ section::after {
   font-size: 28px;
   font-weight: 600;
   letter-spacing: 1px;
+  text-align: center;
   text-transform: uppercase;
 }
 
@@ -314,20 +325,6 @@ form {
   justify-content: space-between;
 }
 
-form a {
-  background-color: #5f86e1;
-  border: none;
-  color: white;
-  cursor: pointer;
-  display: inline-block;
-  height: 50px;
-  line-height: 50px;
-  margin: 0;
-  width: 25%;
-  text-align: center;
-  transition: 0.25s;
-}
-
 /* form a:hover {
   background-color: #f8961e;
 } */
@@ -345,7 +342,7 @@ input[type="email"] {
 /* Idea */
 
 #method {
-  background-color: #f8961e;
+  background-color: #f9c74f;
   color: white;
 }
 
@@ -374,13 +371,11 @@ input[type="email"] {
 }
 
 #about-us {
-  background-color: #f9c74f;
+  background-color: #f8961e;
   color: white;
 }
 
 #us {
-  /* display: flex;
-  justify-content: space-between; */
   margin-bottom: 50px;
 }
 
@@ -446,6 +441,25 @@ input[type="email"] {
   background-color: #f94144;
 }
 
+#contact-items {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.contact-item {
+  color: white;
+  display: flex;
+  line-height: 50px;
+  margin: 30px 0;
+  width: 300px;
+}
+
+.contact-item img {
+  margin-right: 20px;
+  width: 50px;
+}
+
 #subscribe {
   background-color: #fff8;
   border-radius: 20px;
@@ -456,6 +470,19 @@ input[type="email"] {
 #subscribe form {
   text-align: center;
   margin: 30px 0;
+}
+
+#subscribe a.button {
+  background-color: #5f86e2;
+  line-height: 50px;
+  margin: 0;
+  width: 25%;
+  height: 50px;
+}
+
+#subscribe a.button:hover {
+  background-color: #f8961e;
+  animation: pulse2 0.5s;
 }
 
 #game {
@@ -481,6 +508,7 @@ footer {
   width: 100px;
   height: 100px;
   z-index: 9999;
+  transition-delay: 1s;
 }
 
 #flying-boy-appearance-trigger {

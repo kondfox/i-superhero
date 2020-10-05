@@ -21,11 +21,8 @@ function initEventHanlders() {
       modals.forEach((m) => m.classList.add("closed"));
     })
   );
-}
 
-function flyingBoyHandler() {
-  appearanceHandler();
-  // scrollHandler();
+  flyingBoyHandler();
 }
 
 function scrollHandler() {
@@ -53,7 +50,7 @@ function scrollHandler() {
   });
 }
 
-function appearanceHandler() {
+function flyingBoyHandler() {
   if (
     "IntersectionObserver" in window &&
     "IntersectionObserverEntry" in window &&
