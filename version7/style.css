@@ -10,7 +10,7 @@ html {
 body {
   margin: 0;
   font-family: "Roboto", sans-serif;
-  padding-top: 60px;
+  padding-top: 6vh;
   position: relative;
 }
 
@@ -28,12 +28,8 @@ body::after {
   z-index: -100;
 }
 
-main {
-}
-
 main::after {
   content: "";
-  /* background-color: #0009; */
   top: 0;
   left: 0;
   bottom: 0;
@@ -44,7 +40,7 @@ main::after {
 
 main h1 {
   color: #f5d12f;
-  font-size: 48px;
+  font-size: 5vh;
   text-align: center;
 }
 
@@ -72,12 +68,12 @@ a.button {
   display: block;
   font-size: 32px;
   cursor: pointer;
-  margin-top: 50px;
+  margin: 5vh 0;
   outline: none;
   text-align: center;
-  line-height: 80px;
-  height: 80px;
-  width: 400px;
+  line-height: 8vh;
+  height: 8vh;
+  width: 30vw;
   transition: 0.5s;
 }
 
@@ -151,14 +147,7 @@ nav a {
 /* Header */
 
 header {
-  padding-bottom: 100px;
-}
-
-.glass {
-  background-color: #ffffff22;
-  width: 100%;
-  height: 100%;
-  padding-bottom: 100px;
+  padding-bottom: 6vh;
 }
 
 header * {
@@ -172,22 +161,17 @@ header {
   text-align: center;
 }
 
-header svg {
-  width: 800px;
-}
-
 #title textPath {
   font-family: "Russo One", sans-serif;
   fill: #f5d12f;
   font-size: 2.5em;
-  /* text-shadow: rgba(255, 255, 255, 0.15) 10px 10px 0px; */
-  padding: 50px 0 100px 0;
-  /* letter-spacing: 20px; */
+  text-shadow: rgba(255, 255, 255, 0.15) 10px 10px 0px;
+  /* padding: 50px 0 100px 0; */
 }
 
 strong {
   color: #fb3436;
-  font-size: 28px;
+  font-size: 3vh;
 }
 
 #subtitle {
@@ -200,7 +184,7 @@ strong {
 
 h3 {
   letter-spacing: 3px;
-  padding: 20px 0;
+  padding: 3vh 0;
   font-size: 3vh;
 }
 
@@ -256,38 +240,38 @@ path {
 /* Sections */
 
 section {
-  /* height: 600px; */
-  padding: 100px 0;
-  font-size: 1.5em;
+  padding: 8vh 0;
   position: relative;
   background-image: url("../img/bg_transparent.png");
   background-repeat: repeat;
   background-attachment: fixed;
 }
 
-section::after {
+section:not(:last-child)::after {
   content: "";
   background-repeat: no-repeat;
-  background-size: 50em 50em;
   opacity: 1;
   position: absolute;
   z-index: 1;
+  bottom: -20vh;
+  width: 40vh;
+  height: 40vh;
+  background-size: 40vh 40vh;
 }
 
 .content {
   color: black;
-  padding: 50px;
-  font-size: 20px;
+  padding: 5vh;
+  font-size: 2vh;
   line-height: 1.5;
   margin: auto;
-  /* max-width: 1200px; */
   width: 75%;
   position: relative;
   z-index: 1000;
 }
 
 .content h2 {
-  font-size: 28px;
+  font-size: 3vh;
   font-weight: 600;
   letter-spacing: 1px;
   text-align: center;
@@ -305,7 +289,7 @@ section::after {
 
 section p {
   font-weight: 300;
-  margin-bottom: 20px;
+  margin-bottom: 3vh;
   text-align: justify;
 }
 
@@ -324,17 +308,13 @@ form {
   justify-content: space-between;
 }
 
-/* form a:hover {
-  background-color: #f8961e;
-} */
-
 input[type="email"] {
   border: none;
   color: #666;
   outline: none;
-  font-size: 32px;
+  font-size: 3vh;
   padding: 5px 10px;
-  height: 50px;
+  height: 5vh;
   width: 70%;
 }
 
@@ -347,10 +327,6 @@ input[type="email"] {
 
 #method::after {
   left: 0;
-  bottom: -10em;
-  width: 20em;
-  height: 20em;
-  background-size: 20em 20em;
   background-image: url("../img/planet1_big.png");
 }
 
@@ -360,13 +336,38 @@ input[type="email"] {
 }
 
 #progress::after {
-  bottom: -12em;
   right: 0;
-  width: 20em;
-  height: 20em;
-  background-size: 20em 20em;
   background-image: url("../img/planet2_big.png");
   background-position: center;
+}
+
+#subscribe {
+  background-color: #fff8;
+  border-radius: 20px;
+  margin: 5vh 0;
+  padding: 3vh;
+}
+
+#subscribe form {
+  text-align: center;
+  margin: 3vh 0;
+}
+
+#subscribe a.button {
+  background-color: #5f86e2;
+  line-height: 5vh;
+  margin: 0;
+  width: 25%;
+  height: 5vh;
+}
+
+#subscribe a.button:hover {
+  background-color: #f8961e;
+  animation: pulse2 0.5s;
+}
+
+#game {
+  padding: 0;
 }
 
 #about-us {
@@ -374,18 +375,14 @@ input[type="email"] {
   color: white;
 }
 
-#us {
-  margin-bottom: 50px;
-}
-
 .card {
-  margin-bottom: 50px;
+  margin-bottom: 5vh;
 }
 
 .card img {
   width: 40%;
   float: left;
-  margin-right: 30px;
+  margin-right: 2vw;
 }
 
 .card a {
@@ -399,28 +396,21 @@ input[type="email"] {
   color: white;
 }
 
-.role,
-.who {
-}
-
-.about {
-}
-
 .about p:last-child {
   float: left;
 }
 
 .quote {
-  font-size: 40px;
+  font-size: 4vh;
   font-weight: 600;
 }
 
 .about .quote:first-child {
-  margin-right: 5px;
+  margin-right: 1vw;
 }
 
 .about .quote:last-child {
-  margin-left: 5px;
+  margin-left: 1vw;
 }
 
 #for-parents {
@@ -429,10 +419,6 @@ input[type="email"] {
 
 #about-us::after {
   left: 0;
-  bottom: -9em;
-  width: 18em;
-  height: 18em;
-  background-size: 18em 18em;
   background-image: url("../img/planet3.png");
 }
 
@@ -449,43 +435,16 @@ input[type="email"] {
 .contact-item {
   color: white;
   display: flex;
-  line-height: 50px;
-  margin: 30px 0;
-  width: 300px;
+  font-weight: 600;
+  line-height: 5vh;
+  margin: 3vh 0;
+  width: 22vw;
 }
 
 .contact-item img {
-  margin-right: 20px;
-  width: 50px;
-}
-
-#subscribe {
-  background-color: #fff8;
-  border-radius: 20px;
-  margin: 50px 0;
-  padding: 30px;
-}
-
-#subscribe form {
-  text-align: center;
-  margin: 30px 0;
-}
-
-#subscribe a.button {
-  background-color: #5f86e2;
-  line-height: 50px;
-  margin: 0;
-  width: 25%;
-  height: 50px;
-}
-
-#subscribe a.button:hover {
-  background-color: #f8961e;
-  animation: pulse2 0.5s;
-}
-
-#game {
-  padding: 0;
+  margin-right: 1.5vw;
+  width: 5vh;
+  height: 5vh;
 }
 
 /* Footer */
@@ -609,4 +568,147 @@ footer {
   color: #000;
   text-decoration: none;
   cursor: pointer;
+}
+
+@media (max-width: 414px) {
+  body {
+    padding-top: 8vw;
+  }
+
+  nav {
+    display: none;
+  }
+
+  header {
+    padding-bottom: 8vw;
+  }
+
+  #title {
+    height: 25vw;
+  }
+
+  #title svg {
+    width: 80vw;
+  }
+
+  #hero-container {
+    height: 60vw;
+  }
+
+  #hero-img {
+    width: 80vw;
+    height: 80vw;
+    margin-top: -16vw;
+  }
+
+  #subtitle {
+    font-size: 5vw;
+  }
+
+  h3 {
+    font-size: 3vw;
+  }
+
+  section {
+    padding: 8vh 0;
+  }
+
+  section p {
+    margin-bottom: 0;
+  }
+
+  .content {
+    font-size: 3vw;
+    margin: 0 auto;
+    padding: 0;
+    width: 70%;
+  }
+
+  #game .content {
+    width: 90%;
+  }
+
+  .content h2 {
+    font-size: 3vw;
+  }
+
+  a.button {
+    font-size: 4vw;
+    margin: 3vh 0;
+    line-height: 8vw;
+    height: 8vw;
+    width: 40vw;
+  }
+
+  #subscribe {
+    padding: 10px 20px;
+    margin: 0;
+  }
+
+  #subscribe form {
+    margin: 10px 0;
+  }
+
+  #subscribe a.button {
+    line-height: 8vw;
+    width: 100%;
+    height: 8vw;
+  }
+
+  form {
+    display: block;
+  }
+
+  input {
+    margin: 3vw 0;
+  }
+
+  input[type="email"] {
+    font-size: 4vw;
+    height: 8vw;
+    width: 100%;
+  }
+
+  strong {
+    font-size: 5vw;
+  }
+
+  .layer {
+    padding: 10px 20px;
+  }
+
+  .quote {
+    font-size: 5vw;
+  }
+
+  .about .quote:first-child {
+    margin-right: 0;
+  }
+
+  .contact-item {
+    line-height: 5vh;
+    margin: 2vh 0;
+    width: 50vw;
+  }
+
+  .contact-item img {
+    margin-right: 2vw;
+    width: 5vh;
+    height: 5vh;
+  }
+
+  #method::after,
+  #progress::after,
+  #about-us::after {
+    bottom: -8vh;
+    width: 16vh;
+    height: 16vh;
+    background-size: 16vh 16vh;
+  }
+
+  #flying-boy {
+    left: 3vw;
+    width: 10vw;
+    height: 10vw;
+  }
 }
