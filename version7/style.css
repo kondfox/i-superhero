@@ -97,8 +97,8 @@ nav {
   background-color: #5f86e2;
   box-shadow: 0px 5px 5px 0px rgba(0, 0, 0, 0.5);
   display: flex;
-  padding: 10px 0;
-  height: 60px;
+  height: 6vh;
+  line-height: 6vh;
   position: fixed;
   width: 100%;
   top: 0;
@@ -113,8 +113,8 @@ nav {
 }
 
 #logo img {
-  max-width: 120px;
-  height: 120px;
+  max-width: 15vh;
+  height: 15vh;
   position: absolute;
   top: -0.5em;
   left: 2em;
@@ -136,7 +136,6 @@ li {
 
 li {
   list-style: none;
-  line-height: 40px;
 }
 
 a {
@@ -145,8 +144,7 @@ a {
 
 nav a {
   color: white;
-  font-size: 1.5em;
-  /* color: #0D4383; */
+  font-size: 2.5vh;
   text-shadow: rgba(0, 0, 0, 0.3) 1px 2px;
 }
 
@@ -194,15 +192,16 @@ strong {
 
 #subtitle {
   color: #fb3436;
-  font-size: 2.5em;
+  font-size: 5vh;
   letter-spacing: 6px;
-  margin-top: 30px;
+  margin-top: 5vh;
   text-shadow: rgba(255, 255, 255, 0.15) 2px 2px 0px;
 }
 
 h3 {
   letter-spacing: 3px;
   padding: 20px 0;
+  font-size: 3vh;
 }
 
 @keyframes rotateImg {
@@ -227,7 +226,7 @@ h3 {
 }
 
 #hero-container {
-  height: 600px;
+  height: 60vh;
 }
 
 #hero-img {
@@ -236,9 +235,9 @@ h3 {
   /* background-position-x: -38px; */
   background-size: contain;
   background-repeat: no-repeat;
-  width: 800px;
-  height: 800px;
-  margin-top: -160px;
+  width: 80vh;
+  height: 80vh;
+  margin-top: -16vh;
 }
 
 path {
@@ -246,12 +245,12 @@ path {
 }
 
 #title {
-  height: 236px;
+  height: 25vh;
   overflow: hidden;
 }
 
 #title svg {
-  width: 800px;
+  width: 80vh;
 }
 
 /* Sections */
