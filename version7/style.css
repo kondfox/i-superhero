@@ -215,7 +215,7 @@ h3 {
 
 #hero-img {
   animation: floatImg 2s infinite linear;
-  background: url("../img/heros.png");
+  background: url("../img/heroes.png");
   /* background-position-x: -38px; */
   background-size: contain;
   background-repeat: no-repeat;
