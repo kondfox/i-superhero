@@ -485,10 +485,10 @@ footer {
   display: block;
 
   /* Probably need media queries here */
-  width: 80%;
+  width: 80vw;
   max-width: 100%;
 
-  height: 80%;
+  height: 80vh;
   max-height: 100%;
 
   position: fixed;
@@ -500,11 +500,8 @@ footer {
 
   transform: translate(-50%, -50%);
 
-  /* If known, negative margins are probably better (less chance of blurry text). */
-  /* margin: -200px 0 0 -200px; */
-
   background: white;
-  box-shadow: 0 0 60px 10px rgba(0, 0, 0, 0.9);
+  /* box-shadow: 0 0 60px 10px rgba(0, 0, 0, 0.9); */
   z-index: 9999;
 }
 
@@ -561,6 +558,8 @@ footer {
   float: right;
   font-size: 28px;
   font-weight: bold;
+  position: fixed;
+  right: 10px;
 }
 
 .close:hover,
@@ -699,6 +698,32 @@ footer {
     width: 16vh;
     height: 16vh;
     background-size: 16vh 16vh;
+  }
+
+  .modal {
+    background-color: #f8961e;
+    height: 90vh;
+  }
+
+  .modal-content {
+    font-size: 3vw;
+    padding: 10px 40px 10px 20px;
+  }
+
+  .modal-content h2 {
+    text-align: center;
+  }
+
+  .modal-content h3 {
+    font-size: 3vw;
+  }
+
+  .modal-content ul {
+    padding-left: 20px;
+  }
+
+  .close {
+    color: black;
   }
 
   #flying-boy {
