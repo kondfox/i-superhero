@@ -265,7 +265,7 @@ section:not(:last-child)::after {
   font-size: 2vh;
   line-height: 1.5;
   margin: auto;
-  width: 75%;
+  width: 75vw;
   position: relative;
   z-index: 1000;
 }
@@ -621,7 +621,7 @@ footer {
     font-size: 3vw;
     margin: 0 auto;
     padding: 0;
-    width: 70%;
+    width: 75vw;
   }
 
   #game .content {
