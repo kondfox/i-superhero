@@ -619,9 +619,8 @@ footer {
 
   .content {
     font-size: 3vw;
-    margin: 0 auto;
-    padding: 0;
-    width: 75vw;
+    margin: 0 45px;
+    padding: 0 !important;
   }
 
   #game .content {
@@ -707,8 +706,8 @@ footer {
   }
 
   #flying-boy {
-    left: 3vw;
-    width: 10vw;
-    height: 10vw;
+    left: 5px;
+    width: 35px;
+    height: 35px;
   }
 }
