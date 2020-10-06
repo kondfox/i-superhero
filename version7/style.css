@@ -465,7 +465,7 @@ footer {
   opacity: 1;
   width: 100px;
   height: 100px;
-  z-index: 9999;
+  z-index: 9000;
   transition-delay: 1s;
 }
 
@@ -488,7 +488,7 @@ footer {
   width: 80vw;
   max-width: 100%;
 
-  height: 80vh;
+  height: 90vh;
   max-height: 100%;
 
   position: fixed;
@@ -500,7 +500,7 @@ footer {
 
   transform: translate(-50%, -50%);
 
-  background: white;
+  background-color: #f8961e;
   /* box-shadow: 0 0 60px 10px rgba(0, 0, 0, 0.9); */
   z-index: 9999;
 }
@@ -554,12 +554,12 @@ footer {
 }
 
 .close {
-  color: #aaaaaa;
+  color: black;
   float: right;
   font-size: 28px;
   font-weight: bold;
   position: fixed;
-  right: 10px;
+  right: 1vw;
 }
 
 .close:hover,
@@ -700,11 +700,6 @@ footer {
     background-size: 16vh 16vh;
   }
 
-  .modal {
-    background-color: #f8961e;
-    height: 90vh;
-  }
-
   .modal-content {
     font-size: 3vw;
     padding: 10px 40px 10px 20px;
@@ -720,10 +715,6 @@ footer {
 
   .modal-content ul {
     padding-left: 20px;
-  }
-
-  .close {
-    color: black;
   }
 
   #flying-boy {
