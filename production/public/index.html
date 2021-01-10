@@ -19,16 +19,16 @@
       href="https://fonts.googleapis.com/css2?family=Andika&family=Russo+One&family=Underdog&display=swap"
       rel="stylesheet"
     />
-    <link rel="stylesheet" href="style.css" />
-    <script src="jquery-3.5.2-min.js"></script>
-    <script src="jquery.arctext.js"></script>
+    <link rel="stylesheet" href="css/style.css" />
+    <script src="lib/jquery-3.5.2-min.js"></script>
+    <script src="lib/jquery-3.5.2-min.js"></script>
     <title>Я - супергерой</title>
   </head>
   <body>
     <nav>
       <div id="logo">
         <a href="#">
-          <img src="../img/logo6.png" />
+          <img src="img/logo6.png" />
         </a>
       </div>
       <ul>
@@ -168,11 +168,11 @@
             <li>Правила игры</li>
           </ul>
           <div>
-            <a class="button pulse" href="game.html" target="_blank">
+            <a class="button pulse" href="html/game.html" target="_blank">
               Правила игры
             </a>
           </div>
-          <div id="subscribe">
+          <div id="subscribe" class="hidden">
             <p>
               В данный момент игра находится в финальной стадии разработки, уже
               очень скоро мы готовы будем представить ее Вам. (первых
@@ -182,8 +182,8 @@
               получат также скидку на игру в размере 20%!
             </p>
             <form>
-              <input id="email" type="email" placeholder="email@domain.com" />
-              <a id="email-submit" class="button">Отправить</a>
+              <input id="email" type="email" placeholder="email@domain.com" disabled />
+              <a id="email-submit" class="button disabled">Отправить</a>
             </form>
           </div>
         </div>
@@ -193,7 +193,7 @@
           <h2>О нас</h2>
           <div id="us">
             <div class="card layer">
-              <img src="../img/Nadia3.jpg" alt="" />
+              <img src="img/Nadia3.jpg" alt="" />
               <div class="who">Надежда Омельченко</div>
               <div class="role">
                 Психолог, нейропсихолог, системный семейный психотерапевт, детский игровой терапевт, автор МИР S , а также ряда​ диагностических, коррекционных и развивающих методик, мама мужчин 17 и 10 лет.
@@ -218,7 +218,7 @@
               </div>
             </div>
             <div class="card layer">
-              <img src="../img/Lara2.jpg" alt="" />
+              <img src="img/Lara2.jpg" alt="" />
               <div class="who">Дияжева Лариса Вячеславна</div>
               <div class="role">
                 Клинический психолог, детский нейропсихолог, специалист в области нейропсихологической диагностики  и коррекции детей от 3 до 14 лет. Стаж работы более 10 лет.
@@ -271,14 +271,14 @@
               target="_blank"
             >
               <img
-                src="../img/instagram_icon.png"
+                src="img/instagram_icon.png"
                 alt="instagram"
-                id="istagram-icon"
+                id="istagram"
               />
               <span>#school_of_superheroes</span>
             </a>
             <a class="contact-item" href="mailto:heroschool@mail.ru">
-              <img src="../img/mail_icon.png" alt="email" id="email-icon" />
+              <img src="img/mail_icon.png" alt="email" id="email" />
               <span>heroschool@mail.ru</span>
             </a>
           </div>
@@ -454,8 +454,18 @@
       //   dir: -1
       // });
     </script>
-    <script src="site.js" type="application/javascript"></script>
-    <script src="viewport-units-buggyfill.js"></script>
+    <!-- The core Firebase JS SDK is always required and must be listed first -->
+    <script src="lib/firebase-app.js"></script>
+    <script src="lib/firebase-analytics.js"></script>
+    <script src="https://www.gstatic.com/firebasejs/8.2.1/firebase-auth.js"></script>
+    <script src="https://www.gstatic.com/firebasejs/8.2.1/firebase-firestore.js"></script>
+    <!-- TODO: Add SDKs for Firebase products that you want to use
+     https://firebase.google.com/docs/web/setup#available-libraries -->
+    <!-- Initialize Firebase -->
+    <script src="lib/init.js"></script>
+    <script src="js/db.js" type="application/javascript"></script>
+    <script src="js/site.js" type="application/javascript"></script>
+    <script src="lib/viewport-units-buggyfill.js"></script>
     <script>
       window.viewportUnitsBuggyfill.init();
     </script>

@@ -731,3 +731,16 @@ footer {
     height: 35px;
   }
 }
+
+a.button.disabled {
+  background-color: lightgray !important;
+}
+
+a.button.disabled:hover {
+  background-color: lightgray !important;
+}
+
+.disabled,
+input:disabled {
+  cursor: not-allowed !important;
+}

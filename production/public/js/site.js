@@ -1,3 +1,13 @@
+const dbConfig = {
+  apiKey:
+    'AAAADRxIfpU:APA91bHIlfAJ9j-6bnF1gwAT2aUsK2OiugWUCwIWgOuxgZoiIA5l6_9sXQK0JYOeBP2pZkWyU1BxZaLO8DtII70yV-N0W0vY-zkW9zyncaz8I4EHsgS_-tWV8Eis_5E7PsB5u7BNc8BW',
+  authDomain: '',
+  databaseURL: '',
+  projectId: '',
+  storageBucket: '',
+  messagingSenderId: '',
+}
+
 function initEventHanlders() {
   const modalOverlay = document.getElementById('modal-overlay')
   const modals = [...document.getElementsByClassName('modal')]
@@ -21,29 +31,23 @@ function initEventHanlders() {
     })
   )
 
-  firebase.initializeApp({
-    apiKey:
-      'AAAADRxIfpU:APA91bHIlfAJ9j-6bnF1gwAT2aUsK2OiugWUCwIWgOuxgZoiIA5l6_9sXQK0JYOeBP2pZkWyU1BxZaLO8DtII70yV-N0W0vY-zkW9zyncaz8I4EHsgS_-tWV8Eis_5E7PsB5u7BNc8BW',
-    authDomain: 'localhost',
-    projectId: 'isuperhero-ru',
-  })
-
-  var db = firebase.firestore()
-
-  document.getElementById('email-submit').addEventListener('click', () => {
-    const email = document.getElementById('email').value
-    console.log('submiting ' + email)
-    db.collection('subscribers')
-      .add({
-        email: email,
-      })
-      .then(docRef => {
-        console.log('Document written with ID: ', docRef.id)
-      })
-      .catch(error => {
-        console.error('Error adding document: ', error)
-      })
-  })
+  // if (location.hostname === 'localhost') {
+  //   db.useEmulator('localhost', 8080)
+  // }
+  const emailSubmit = document.getElementById('email-submit')
+  if (!emailSubmit.classList.contains('disabled')) {
+    emailSubmit.addEventListener('click', () => {
+      const email = document.getElementById('email').value
+      console.log('submiting ' + email)
+      DB.post('subscribers', { email: email })
+        .then(docRef => {
+          console.log('Document written with ID: ', docRef.id)
+        })
+        .catch(error => {
+          console.error('Error adding document: ', error)
+        })
+    })
+  }
 
   flyingBoyHandler()
 }
