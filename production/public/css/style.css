@@ -16,7 +16,7 @@ body {
 
 body::after {
   content: '';
-  background-image: url('../img/bg1.png');
+  background-image: url('https://ik.imagekit.io/zbmrkjdfcwe/img/bg1.png');
   background-repeat: repeat;
   background-attachment: fixed;
   background-size: contain;
@@ -245,7 +245,7 @@ h3 {
 
 #hero-img {
   animation: floatImg 2s infinite linear;
-  background: url('../img/heroes3.png');
+  background: url('https://ik.imagekit.io/zbmrkjdfcwe/img/heroes3.png');
   /* background-position-x: -38px; */
   background-size: contain;
   background-repeat: no-repeat;
@@ -272,7 +272,7 @@ path {
 section {
   padding: 8vh 0;
   position: relative;
-  background-image: url('../img/bg_transparent.png');
+  background-image: url('https://ik.imagekit.io/zbmrkjdfcwe/img/bg_transparent.png');
   background-repeat: repeat;
   background-attachment: fixed;
 }
@@ -368,7 +368,7 @@ input[type='email'] {
 
 #method::after {
   left: 0;
-  background-image: url('../img/planet1_big.png');
+  background-image: url('https://ik.imagekit.io/zbmrkjdfcwe/img/planet1_big.png');
 }
 
 #progress {
@@ -378,7 +378,7 @@ input[type='email'] {
 
 #progress::after {
   right: 0;
-  background-image: url('../img/planet2_big.png');
+  background-image: url('https://ik.imagekit.io/zbmrkjdfcwe/img/planet2_big.png');
   background-position: center;
 }
 
@@ -495,7 +495,7 @@ input[type='email'] {
 
 #about-us::after {
   left: 0;
-  background-image: url('../img/planet3.png');
+  background-image: url('https://ik.imagekit.io/zbmrkjdfcwe/img/planet3.png');
 }
 
 #contact {
@@ -535,7 +535,7 @@ footer {
   top: 50%;
   left: 2.5em;
   animation: floatImg 2s infinite linear;
-  background: url('../img/hero3.png');
+  background: url('https://ik.imagekit.io/zbmrkjdfcwe/img/hero3.png');
   background-size: contain;
   background-repeat: no-repeat;
   opacity: 1;
