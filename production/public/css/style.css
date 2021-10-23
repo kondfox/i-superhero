@@ -19,6 +19,7 @@ body::after {
   background-image: url('../img/bg1.png');
   background-repeat: repeat;
   background-attachment: fixed;
+  background-size: contain;
   opacity: 0.5;
   top: 0;
   left: 0;
@@ -38,11 +39,15 @@ main::after {
   z-index: -90;
 }
 
-main h1 {
+ul {
+  margin: 0;
+}
+
+/* main h1 {
   color: #f5d12f;
   font-size: 5vh;
   text-align: center;
-}
+} */
 
 @keyframes pulse1 {
   0% {
@@ -62,6 +67,11 @@ main h1 {
   }
 }
 
+.center {
+  display: flex;
+  justify-content: center;
+}
+
 a.button {
   -webkit-box-shadow: 10px 10px 5px -4px rgba(0, 0, 0, 0.5);
   -moz-box-shadow: 10px 10px 5px -4px rgba(0, 0, 0, 0.5);
@@ -70,18 +80,18 @@ a.button {
   border-radius: 5px;
   color: white;
   display: block;
-  font-size: 32px;
+  font-size: clamp(1rem, 5vw, 1.5rem);
   cursor: pointer;
   outline: none;
   text-align: center;
-  line-height: 8vh;
-  height: 8vh;
+  padding: 10px;
   width: 30vw;
   transition: 0.1s;
 }
 
 .content a.button {
   background-color: #f8961e;
+  margin: 5vh 0;
 }
 
 .content a.button:hover {
@@ -149,10 +159,6 @@ nav a {
 
 /* Header */
 
-header {
-  padding-bottom: 6vh;
-}
-
 header * {
   margin: 0 auto;
   text-align: center;
@@ -160,7 +166,12 @@ header * {
 
 header {
   color: #f5d12f;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
   font-family: 'Russo One', sans-serif;
+  height: 94vh;
+  padding-bottom: 6vh;
   text-align: center;
 }
 
@@ -170,6 +181,11 @@ header {
   font-size: 2.5em;
   text-shadow: rgba(255, 255, 255, 0.15) 10px 10px 0px;
   /* padding: 50px 0 100px 0; */
+}
+
+header h3 {
+  font-size: clamp(1rem, 5vw, 2rem);
+  letter-spacing: 3px;
 }
 
 header strong {
@@ -190,10 +206,16 @@ header strong {
   text-shadow: rgba(255, 255, 255, 0.15) 2px 2px 0px;
 }
 
+h1 {
+  color: #f5d12f;
+  font-size: clamp(2rem, 5vw, 3rem);
+  text-align: center;
+}
+
 h3 {
+  margin: 5vh 0;
   letter-spacing: 3px;
-  padding: 3vh 0;
-  font-size: 3vh;
+  font-size: clamp(1rem, 5vw, 1.5rem);
 }
 
 @keyframes rotateImg {
@@ -218,7 +240,7 @@ h3 {
 }
 
 #hero-container {
-  height: 60vh;
+  height: min(50vh, 50vw);
 }
 
 #hero-img {
@@ -227,8 +249,8 @@ h3 {
   /* background-position-x: -38px; */
   background-size: contain;
   background-repeat: no-repeat;
-  width: 80vh;
-  height: 80vh;
+  width: min(80vh, 80vw);
+  height: min(80vh, 80vw);
   margin-top: -16vh;
 }
 
@@ -238,11 +260,11 @@ path {
 
 #title {
   height: 25vh;
-  overflow: hidden;
+  margin-top: 6vh;
 }
 
 #title svg {
-  width: 80vh;
+  width: min(80vh, 80vw);
 }
 
 /* Sections */
@@ -274,7 +296,7 @@ section li {
 .content {
   color: black;
   padding: 5vh;
-  font-size: 2vh;
+  font-size: clamp(1rem, 5vw, 1.5rem);
   line-height: 1.5;
   margin: auto;
   width: 75vw;
@@ -283,7 +305,7 @@ section li {
 }
 
 .content h2 {
-  font-size: 3vh;
+  font-size: clamp(1rem, 5vw, 2rem);
   font-weight: 600;
   letter-spacing: 1px;
   text-align: center;
@@ -301,7 +323,7 @@ section li {
 
 section p {
   font-weight: 300;
-  margin-bottom: 3vh;
+  margin: 5vh 0;
   text-align: justify;
 }
 
@@ -623,17 +645,23 @@ footer {
   cursor: pointer;
 }
 
+@media (max-width: 1024px) {
+  nav {
+    display: none;
+  }
+}
+
 @media (max-width: 414px) {
   body {
     padding-top: 8vw;
   }
 
-  nav {
-    display: none;
+  header {
+    height: min(120vh, 120vw);
   }
 
-  header {
-    padding-bottom: 8vw;
+  h3 {
+    letter-spacing: 0;
   }
 
   #title {
@@ -641,51 +669,30 @@ footer {
   }
 
   #title svg {
-    width: 80vw;
+    width: min(80vw, 80vh);
   }
 
   #hero-container {
-    height: 60vw;
+    height: min(60vw, 60vh);
   }
 
   #hero-img {
-    width: 80vw;
-    height: 80vw;
+    width: min(80vw, 80vh);
+    height: min(80vw, 80vh);
     margin-top: -16vw;
-  }
-
-  #subtitle {
-    font-size: 5vw;
-  }
-
-  h3 {
-    font-size: 3vw;
   }
 
   section {
     padding: 8vh 0;
   }
 
-  section p {
-    margin-bottom: 0;
-  }
-
   .content {
-    font-size: 3vw;
     margin: 0 45px;
     padding: 0 !important;
   }
 
-  .content h2 {
-    font-size: 3vw;
-  }
-
   a.button {
-    font-size: 4vw;
-    margin: 3vh 0;
-    line-height: 8vw;
-    height: 8vw;
-    width: 40vw;
+    width: 80vw;
   }
 
   #subscribe {
@@ -697,12 +704,6 @@ footer {
     margin: 10px 0;
   }
 
-  #subscribe a.button {
-    line-height: 8vw;
-    width: 100%;
-    height: 8vw;
-  }
-
   form {
     display: block;
   }
@@ -712,21 +713,12 @@ footer {
   }
 
   input[type='email'] {
-    font-size: 4vw;
     height: 8vw;
     width: 100%;
   }
 
-  strong {
-    font-size: 5vw;
-  }
-
   .layer {
     padding: 10px 20px;
-  }
-
-  .quote {
-    font-size: 5vw;
   }
 
   .about .quote:first-child {
@@ -754,17 +746,21 @@ footer {
     background-size: 16vh 16vh;
   }
 
+  .modal {
+    height: 100% !important;
+    width: 100% !important;
+  }
+
+  .modal .close {
+    right: 3vw;
+  }
+
   .modal-content {
-    font-size: 3vw;
     padding: 10px 40px 10px 20px;
   }
 
   .modal-content h2 {
     text-align: center;
-  }
-
-  .modal-content h3 {
-    font-size: 3vw;
   }
 
   .modal-content ul {
@@ -775,6 +771,10 @@ footer {
     left: 5px;
     width: 35px;
     height: 35px;
+  }
+
+  .monster {
+    display: none;
   }
 }
 
@@ -797,5 +797,5 @@ input:disabled {
 }
 
 .monster {
-  height: 300px;
+  height: 20vw;
 }

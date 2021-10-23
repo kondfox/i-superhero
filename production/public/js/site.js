@@ -38,9 +38,9 @@ function subscriptionHandler() {
 }
 
 function initEventHanlders() {
+  flyingBoyHandler()
   modalHandlers()
   subscriptionHandler()
-  flyingBoyHandler()
 }
 
 function flyingBoyHandler() {
