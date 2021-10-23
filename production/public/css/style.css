@@ -245,7 +245,7 @@ h3 {
 
 #hero-img {
   animation: floatImg 2s infinite linear;
-  background: url('../img/heroes2.png');
+  background: url('../img/heroes3.png');
   /* background-position-x: -38px; */
   background-size: contain;
   background-repeat: no-repeat;
@@ -535,7 +535,7 @@ footer {
   top: 50%;
   left: 2.5em;
   animation: floatImg 2s infinite linear;
-  background: url('../img/hero2.png');
+  background: url('../img/hero3.png');
   background-size: contain;
   background-repeat: no-repeat;
   opacity: 1;
