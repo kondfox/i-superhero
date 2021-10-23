@@ -213,9 +213,9 @@ h1 {
 }
 
 h3 {
-  margin: 5vh 0;
+  margin: clamp(3vh, 1vw, 5vh) 0;
   letter-spacing: 3px;
-  font-size: clamp(1rem, 5vw, 1.5rem);
+  font-size: clamp(0.8rem, 2.5vw, 1.5rem);
 }
 
 @keyframes rotateImg {
@@ -296,7 +296,7 @@ section li {
 .content {
   color: black;
   padding: 5vh;
-  font-size: clamp(1rem, 5vw, 1.5rem);
+  font-size: clamp(0.6rem, 2.5vw, 1.5rem);
   line-height: 1.5;
   margin: auto;
   width: 75vw;
@@ -323,7 +323,7 @@ section li {
 
 section p {
   font-weight: 300;
-  margin: 5vh 0;
+  margin: clamp(3vh, 1vw, 5vh) 0;
   text-align: justify;
 }
 
