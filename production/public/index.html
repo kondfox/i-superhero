@@ -12,6 +12,13 @@
   <link rel="stylesheet" href="css/style.css" />
   <script src="lib/jquery-3.5.2-min.js"></script>
   <script src="lib/jquery-3.5.2-min.js"></script>
+  <script async src="https://www.googletagmanager.com/gtag/js?id=G-NTWT1J47TM"></script>
+  <script>
+    window.dataLayer = window.dataLayer || [];
+    function gtag(){dataLayer.push(arguments);}
+    gtag('js', new Date());
+    gtag('config', 'G-NTWT1J47TM');
+  </script>
   <title>Я - супергерой</title>
 </head>
 
@@ -24,10 +31,13 @@
     </div>
     <ul>
       <li>
-        <a href="#method">Приципы метода</a>
+        <a href="#method">Об игре</a>
       </li>
       <li>
-        <a href="#progress">Игра "Я - супергерой"</a>
+        <a href="#progress">Для кого</a>
+      </li>
+      <li>
+        <a href="#order-game">Заказать</a>
       </li>
       <li>
         <a href="#about-us">О нас</a>
@@ -38,7 +48,6 @@
     </ul>
   </nav>
   <header>
-    <!-- <h1 id="title">Школа Sупергероев</h1> -->
     <div id="title">
       <svg viewBox="0 0 500 500">
         <path id="curve" d="M73.2,148.6c4-6.1,65.5-96.8,178.6-95.6c111.3,1.2,170.8,90.3,175.1,97" />
@@ -50,10 +59,7 @@
     <div id="hero-container">
       <div id="hero-img"></div>
     </div>
-    <!-- <h2 id="subtitle">МИР S</h2> -->
     <h3>
-      <!-- <strong>М</strong>етодика <strong>И</strong>грового
-      <strong>Р</strong>азвития <strong>S</strong>пособностей -->
       Развивайте мозг не выходя из дома
     </h3>
   </header>
@@ -182,44 +188,32 @@
             Правила игры
           </a>
         </div>
-        <div id="subscribe" class="hidden">
-          <p>
-            В данный момент игра находится в финальной стадии разработки, уже
-            очень скоро мы готовы будем представить ее Вам. (первых
-            очаровательных и коварных монстров можно увидеть на нашей
-            страничке в инстаграмм).Если Вы заинтересованы, оставьте свой
-            e-mail, и мы сообщим Вам о готовности игры. А первые 100 человек
-            получат также скидку на игру в размере 20%!
-          </p>
-          <form>
-            <input id="email" type="email" placeholder="email@domain.com" disabled />
-            <a id="email-submit" class="button disabled">Отправить</a>
-          </form>
-        </div>
       </div>
     </section>
     <section id="order-game">
       <div class="content">
         <h3>Оформить заказ</h3>
         <p>
-          В данный момент игра находится в печати. Оформите предварительный заказ прямо сейчас, и стоимость игры для Вас
-          составит 1900 рублей (без учета доставки). С момента старта официальных продаж купить игру можно будет по цене
-          2500 руб.
-        </p>
-        <p>
-          Оформите предзаказ на игру прямо сейчас, и скоро <strong>Вам НЕ придется:</strong>
+          Купите игру прямо сейчас, и скоро <strong>Вам НЕ придется:</strong>
         </p>
         <ul>
           <li>Искать подходящие по возрасту развивающие упражнения по разным источникам</li>
           <li>Уговаривать ребенка позаниматься</li>
           <li>Подолгу думать, как с удовольствием и пользой провести время с семьей</li>
         </ul>
-        <form>
+        <p>
+          <span>Для покупки игры и уточнения всех деталей свяжитесь с нами в инстаграмме:</span>
+          <a class="contact-item" href="https://www.instagram.com/superhero.igra/" target="_blank">
+            <img src="img/instagram_icon.png" alt="instagram" id="istagram" />
+            <span>#superhero.igra</span>
+          </a>
+        </p>
+        <!-- <form>
           <div class="row">
-            <input id="email" type="email" placeholder="email@domain.com" disabled />
-            <a id="email-submit" class="button disabled">Отправить</a>
+            <input id="email" type="email" placeholder="email@domain.com" />
+            <a id="email-submit" class="button">Отправить</a>
           </div>
-        </form>
+        </form> -->
       </div>
     </section>
     <section id="about-us">
@@ -236,7 +230,6 @@
             <div class="about">
               <div>
                 <p>
-                  <!-- <span class="quote">"</span> -->
                   В работе, учебе, в жизни вообще для меня всегда важнее всего было чувствовать, что я делаю то, что
                   люблю, и любить то, что я​ делаю. Своей жизни я не представляю без трех вещей: творчества, движения и
                   игры. И я очень счастлива, потому что в работе с детьми моя деятельность, ценности и любовь совпадают.
@@ -254,7 +247,6 @@
                   И в какое бы волшебное путешествие мы ни отправлялись, цель у нас всегда одна- найти или создать те
                   возможности, средства, ресурсы​, которые приведут​ взрослеющего человека к той цели, которую он​
                   ставит перед собой.
-                  <!-- <span class="quote">"</span> -->
                 </p>
                 <div>
                   <a id="show-more-nadia">Узнать больше</a>
@@ -271,7 +263,6 @@
             </div>
             <div class="about">
               <p>
-                <!-- <span class="quote">"</span> -->
                 С самого детства я знала, что очень хочу помогать людям, поэтому в, первую очередь, моё внимание
                 привлекла медицина. Кроме того, я очень люблю детей и мне всегда хотелось связать свою профессию с ними.
                 ⠀
@@ -290,7 +281,6 @@
               </p>
               <p>
                 Я очень люблю детей и уверена, что даже преодоление сложностей может быть интересным и увлекательным.
-                <!-- <span class="quote">"</span> -->
               </p>
               <div>
                 <a id="show-more-lara">Узнать больше</a>
@@ -494,23 +484,8 @@
     <div id="flying-boy"></div>
   </a>
   <div id="flying-boy-appearance-trigger"></div>
-  <script>
-      // $("#title").arctext({
-      //   radius: 500,
-      // });
-      // $('#subtitle').arctext({
-      //   radius: 100,
-      //   dir: -1
-      // });
-  </script>
-  <!-- The core Firebase JS SDK is always required and must be listed first -->
   <script src="lib/firebase-app.js"></script>
-  <script src="lib/firebase-analytics.js"></script>
-  <script src="https://www.gstatic.com/firebasejs/8.2.1/firebase-auth.js"></script>
   <script src="https://www.gstatic.com/firebasejs/8.2.1/firebase-firestore.js"></script>
-  <!-- TODO: Add SDKs for Firebase products that you want to use
-     https://firebase.google.com/docs/web/setup#available-libraries -->
-  <!-- Initialize Firebase -->
   <script src="lib/init.js"></script>
   <script src="js/db.js" type="application/javascript"></script>
   <script src="js/site.js" type="application/javascript"></script>
@@ -519,5 +494,4 @@
     window.viewportUnitsBuggyfill.init();
   </script>
 </body>
-
 </html>

@@ -1,0 +1,313 @@
+* {
+  box-sizing: border-box;
+}
+
+body {
+  background-color: #00283b;
+  background-image: url('/bg1.934d16f7.png');
+  font-family: 'Roboto', sans-serif;
+  font-size: 21px;
+  line-height: 33px;
+  margin: 0;
+}
+
+nav {
+  background-color: #0491d2;
+  box-shadow: 5px 5px 10px #037bb3, -5px -5px 10px #05a7f2;
+  position: fixed;
+  top: 0;
+  height: 5vh;
+  width: 100%;
+  z-index: 999;
+}
+
+#logo {
+  position: absolute;
+  left: 50px;
+  height: 100px;
+  width: 100px;
+}
+
+#logo img {
+  height: 100%;
+  width: 100%;
+}
+
+nav ul {
+  display: flex;
+  justify-content: center;
+  line-height: 5vh;
+  margin: 0;
+}
+
+nav li {
+  list-style: none;
+  margin: 0 40px;
+}
+
+nav a {
+  color: white;
+  padding: 10px 20px;
+  text-decoration: none;
+}
+
+nav a:hover {
+  border-radius: 5px;
+  background: #0491d2;
+  box-shadow: inset 20px 20px 40px #037bb3, inset -20px -20px 40px #05a7f2;
+}
+
+header {
+  height: 95vh;
+  margin-top: 5vh;
+}
+
+header .content {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  height: 95vh;
+}
+
+header h1,
+header h2 {
+  color: #f5d12f;
+  font-family: 'Russo One', sans-serif;
+}
+
+header h1 {
+  font-size: 60px;
+  text-shadow: rgba(255, 255, 255, 0.15) 5px 5px 0px;
+}
+
+header h2 {
+  font-size: 36px;
+  text-align: center;
+}
+
+#heroes {
+  position: relative;
+  height: 45vh;
+}
+
+@keyframes floatImg {
+  0% {
+    transform: translateY(0);
+  }
+  50% {
+    transform: translateY(-20px);
+  }
+  100% {
+    transform: translateY(0);
+  }
+}
+
+#heroes img {
+  position: absolute;
+  left: 50%;
+  top: -200px;
+  margin-left: -375px;
+  width: 750px;
+  animation: floatImg 2s infinite linear;
+  background: url(/heroes2.cb7b1e40.png);
+  background-size: contain;
+  background-repeat: no-repeat;
+}
+
+section {
+  padding: 50px 10vw;
+  margin: 0 auto;
+}
+
+section h2,
+section h3,
+section strong .button {
+  text-shadow: 0px 1px 1px #3338;
+}
+
+section h2 {
+  font-size: 36px;
+  margin: 50px 0;
+  text-align: center;
+}
+
+.x-center {
+  text-align: center;
+}
+
+.row {
+  display: flex;
+  justify-content: space-between;
+}
+
+.button {
+  display: inline-block;
+  padding: 20px 50px;
+  text-decoration: none;
+}
+
+#method {
+  background-color: #f9c74f;
+}
+
+.cols {
+  display: flex;
+  justify-content: space-between;
+}
+
+#method .col-1 {
+  padding: 20px;
+}
+
+#method img {
+  display: block;
+  margin: 50px auto;
+  width: 200px;
+}
+
+#method .col-1 {
+  width: 40%;
+}
+
+#method .col-2 {
+  background: #f9c74f;
+  border-radius: 50px;
+  box-shadow: 20px 20px 60px #d4a943, -20px -20px 60px #ffe55b;
+  border-left: 1px solid #fff8;
+  padding: 20px 4%;
+  width: 54%;
+}
+
+#methos .col-1 h2 {
+  margin-top: 0;
+}
+
+#progress {
+  background-color: #90be6d;
+}
+
+#progress .cols {
+  flex-direction: column;
+}
+
+#progress ol {
+  list-style: none;
+}
+
+#progress .cols ul li {
+  list-style: disc;
+}
+
+#progress .col-1,
+#progress .col-2 {
+  border-radius: 50px;
+  background: #90be6d;
+  border-left: 1px solid #fff8;
+  box-shadow: 20px 20px 60px #406625, -20px -20px 60px #a6db7d;
+  /* background: linear-gradient(145deg, #9acb75, #82ab62);
+  box-shadow: 20px 20px 60px #7aa25d, -20px -20px 60px #a6db7d; */
+  padding: 20px 50px;
+  margin-bottom: 50px;
+}
+
+#what-is-in-the-game {
+  background-color: #5f86e2;
+}
+
+#what-is-in-the-game li {
+  list-style: none;
+}
+
+#what-is-in-the-game .row {
+  margin: 30px 0;
+}
+
+#what-is-in-the-game .row > li {
+  border-left: 1px solid #fff8;
+  border-radius: 50px;
+  background: linear-gradient(145deg, #668ff2, #5679cb);
+  box-shadow: 20px 20px 60px #5172c0, -20px -20px 60px #6d9aff;
+  cursor: default;
+  padding: 20px;
+  margin: 0 20px;
+  text-align: center;
+  width: 100%;
+}
+
+#what-is-in-the-game li:hover {
+  background: linear-gradient(145deg, #5679cb, #668ff2);
+  box-shadow: 20px 20px 60px #5172c0, -20px -20px 60px #6d9aff;
+}
+
+#what-is-in-the-game #ability-manuals:hover,
+#what-is-in-the-game #equipment:hover {
+  background: linear-gradient(145deg, #668ff2, #5679cb);
+  box-shadow: 20px 20px 60px #5172c0, -20px -20px 60px #6d9aff;
+}
+
+#what-is-in-the-game .content > .row > li::before {
+  content: '';
+  display: block;
+  height: 40px;
+  background-size: 40px;
+  background-repeat: no-repeat;
+  background-position-x: center;
+  margin-bottom: 20px;
+}
+
+#what-is-in-the-game strong {
+  display: block;
+}
+
+#what-is-in-the-game .button {
+  border: 3px solid #fff8;
+  /* border-top: 5px solid #fff8; */
+  border-radius: 50px;
+  /* background: linear-gradient(145deg, #668ff2, #5679cb); */
+  background: linear-gradient(145deg, #ffd555, #e0b347);
+  box-shadow: 5px 5px 10px #5172c0, -5px -5px 10px #6d9aff;
+  /* background: linear-gradient(145deg, #ffd555, #e0b347);
+  box-shadow: 20px 20px 60px #d4a943, -20px -20px 60px #ffe55b; */
+  color: black;
+  margin: 50px auto;
+}
+#what-is-in-the-game .button:hover {
+  /* background: linear-gradient(145deg, #e0b347, #ffd555); */
+  background: #f9c74f;
+  box-shadow: inset 5px 5px 10px #d4a943, inset -5px -5px 10px #ffe55b;
+}
+
+#ability-manuals ul li {
+  border-left: 1px solid #fff8;
+}
+
+#rule-book::before {
+  background-image: url('/rule_book_black.2d4d4368.svg');
+}
+
+#passports::before {
+  background-image: url('/passports_black.fd802f43.svg');
+}
+
+#fields::before {
+  background-image: url('/fields_black.ba94be19.svg');
+}
+
+#dice::before {
+  background-image: url('/dice_black.a3c18fc4.svg');
+}
+
+#deck::before {
+  background-image: url('/deck_black.2d88cb61.svg');
+}
+
+#ability-manuals::before {
+  background-image: url('/ability_manuals_black.a30d994f.svg');
+}
+
+#equipment::before {
+  background-image: url('/equipment_black.a13e1de3.svg');
+}
+
+
+/*# sourceMappingURL=/style.78032849.css.map */

@@ -370,12 +370,12 @@ input[type='email'] {
 }
 
 #what-is-in-the-game ul li::before {
-  content: "❖";
+  content: '❖';
   margin-right: 10px;
 }
 
 #what-is-in-the-game ul li ul li::before {
-  content: "➢";
+  content: '➢';
   margin-right: 10px;
 }
 
@@ -411,6 +411,13 @@ input[type='email'] {
 #order-game {
   background-color: #90be6d;
   color: black;
+}
+
+#order-game .contact-item {
+  color: black;
+  justify-content: center;
+  margin-top: 5vh;
+  width: 100%;
 }
 
 #order-game .button:hover {

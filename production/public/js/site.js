@@ -1,14 +1,4 @@
-const dbConfig = {
-  apiKey:
-    'AAAADRxIfpU:APA91bHIlfAJ9j-6bnF1gwAT2aUsK2OiugWUCwIWgOuxgZoiIA5l6_9sXQK0JYOeBP2pZkWyU1BxZaLO8DtII70yV-N0W0vY-zkW9zyncaz8I4EHsgS_-tWV8Eis_5E7PsB5u7BNc8BW',
-  authDomain: '',
-  databaseURL: '',
-  projectId: '',
-  storageBucket: '',
-  messagingSenderId: '',
-}
-
-function initEventHanlders() {
+function modalHandlers() {
   const modalOverlay = document.getElementById('modal-overlay')
   const modals = [...document.getElementsByClassName('modal')]
   const laraModal = document.getElementById('lara-modal')
@@ -30,51 +20,27 @@ function initEventHanlders() {
       modals.forEach(m => m.classList.add('closed'))
     })
   )
-
-  // if (location.hostname === 'localhost') {
-  //   db.useEmulator('localhost', 8080)
-  // }
-  const emailSubmit = document.getElementById('email-submit')
-  if (!emailSubmit.classList.contains('disabled')) {
-    emailSubmit.addEventListener('click', () => {
-      const email = document.getElementById('email').value
-      console.log('submiting ' + email)
-      DB.post('subscribers', { email: email })
-        .then(docRef => {
-          console.log('Document written with ID: ', docRef.id)
-        })
-        .catch(error => {
-          console.error('Error adding document: ', error)
-        })
-    })
-  }
-
-  flyingBoyHandler()
 }
 
-function scrollHandler() {
-  // const startY = document.getElementById('idea').getBoundingClientRect().y;
-  const startY = 100
-  const boy = document.getElementById('hero-img')
-  const originalBoyHeight = boy.getBoundingClientRect().height
-  window.addEventListener('scroll', e => {
-    let y = window.scrollY
-    let screenHeight = window.innerHeight
-    let distance = y
-    if (y >= startY) {
-      boy.animate(
-        {
-          height: '100px',
-          transform,
-        },
-        200
-      )
-      setTimeout(() => (boy.style.height = '100px'), 200)
-    } else {
-      boy.animate({ height: `${originalBoyHeight}px` }, 200)
-      setTimeout(() => (boy.style.height = `${originalBoyHeight}px`), 200)
-    }
+function subscriptionHandler() {
+  const emailSubmit = document.getElementById('email-submit')
+  emailSubmit.addEventListener('click', () => {
+    const email = document.getElementById('email').value
+    console.log('submiting ' + email)
+    DB.post('subscribers', { email: email })
+      .then(docRef => {
+        console.log('Document written with ID: ', docRef.id)
+      })
+      .catch(error => {
+        console.error('Error adding document: ', error)
+      })
   })
+}
+
+function initEventHanlders() {
+  modalHandlers()
+  subscriptionHandler()
+  flyingBoyHandler()
 }
 
 function flyingBoyHandler() {
