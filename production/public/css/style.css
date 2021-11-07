@@ -333,8 +333,57 @@ section p {
   padding: 20px 50px;
 }
 
+#game {
+  padding: 0;
+}
+
+#game section {
+  padding: 0;
+  margin: 20px 0 50px 0;
+}
+
+#game section p {
+  font-weight: inherit;
+}
+
 #game .layer {
   border-radius: 20px;
+}
+
+#game img {
+  width: 100%;
+}
+
+table {
+  border-collapse: collapse;
+  width: 100%;
+}
+
+table,
+th,
+td {
+  border: 1px solid #333;
+  padding: 10px;
+}
+
+table.game-stats tbody tr:nth-of-type(1) td:nth-of-type(1) {
+  background-color: #f94144;
+}
+
+table.game-stats tbody tr:nth-of-type(2) td:nth-of-type(1) {
+  background-color: yellow;
+}
+
+table.game-stats tbody tr:nth-of-type(3) td:nth-of-type(1) {
+  background-color: lightgreen;
+}
+
+table.game-stats tbody tr:nth-of-type(4) td:nth-of-type(1) {
+  background-color: cyan;
+}
+
+table.game-stats tbody tr:nth-of-type(5) td:nth-of-type(1) {
+  background-color: blue;
 }
 
 form {
@@ -424,10 +473,6 @@ input[type='email'] {
 #subscribe a.button:hover {
   background-color: #f8961e;
   animation: pulse2 0.5s;
-}
-
-#game {
-  padding: 0;
 }
 
 #order-game {
@@ -775,6 +820,27 @@ footer {
 
   .monster {
     display: none;
+  }
+
+  #game section ul,
+  #game section ol {
+    padding-left: 0;
+  }
+
+  #game section li {
+    margin-left: 10px;
+  }
+
+  #game table {
+    position: relative;
+    left: -15%;
+    width: 115%;
+  }
+
+  #game table,
+  #game th,
+  #game td {
+    padding: 5px;
   }
 }
 
